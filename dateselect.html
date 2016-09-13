@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <title>jQuery UI - Date Select</title>
+        
+            <meta charset="utf-8">
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+            <script src="jquery-ui/jquery-ui.js"></script>
+
+            <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+      
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <style>
+        
+            h1 {
+                color: orange;
+                text-align: center;
+            }
+                
+            #date {
+                margin-top: 10px;
+            }
+        </style>
+      
+
+        <script type="text/javascript">
+
+                $(document).ready(function() {
+
+                    $( ".dateSelect" ).datepicker();
+
+                });
+
+        </script>
+
+    </head>   
+    
+    <body>
+
+        <div class="container">
+            
+            <h1> Book AirTicket</h1>
+            
+            <hr>
+            
+            <p>Select Flight: </p>
+            
+            <select>
+            
+                <option>US Airwaya</option>
+                
+                <option>Jet Blue</option>
+                
+                <option>SouthWest</option>
+                
+                <option>American Airlines</option>
+                
+                <option>United Airwaya</option>
+            
+            </select>
+            
+            
+            <p id="date">Select your date: </p>
+            
+            <p>From: <input class="dateSelect" type="text">  To: <input class="dateSelect" type="text"> </p>
+            
+             <button type="button" class="btn btn-success btn-sm">Submit</button>
+            
+        </div>
+
+
+    </body>
+    
+    
+</html>
